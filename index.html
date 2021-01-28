@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THEBRELD WEB DESIGN AND DEVELOPMENT</title>
+
+    <link rel="icon" href="image/BLACK LOGO.png" />
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- hero section -->
+    <div class="hero">
+      <div class="container">
+        <div class="text-center">
+          <a class="logo" href="/index.html">the<span>breld.</span></a>
+          <h2 class="mb-5">Website Under Construction <br /></h2>
+          <h5 class="mb-5">Sign up to be the first to know when it's ready</h5>
+
+          <form method="post" action="contact.php">
+            <input
+              type="email"
+              class=""
+              name="Email"
+              placeholder="Enter your email..."
+              required=""
+            />
+            <button class="btn1" name="submit">Subscribe</button>
+          </form>
+          <p class="text-danger">
+            <?php if(isset($email_error)) echo $email_error; ?>
+          </p>
+          <div class="icons">
+            <a href="#" class="link"><i class="fa fa-facebook-f"></i></a>
+            <a href="#" class="link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="link"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p class="copy">&copy;2021 thebreld.co.ke</p>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <!-- custom script -->
+    <script src="script/main.js"></script>
+  </body>
+</html>
